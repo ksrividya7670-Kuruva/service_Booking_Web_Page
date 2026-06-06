@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    background: white;
+    border: 2px solid whitesmoke;
+    position: fixed;
+    top: 0;
+}
+.logo{
+    margin-left: 20px;
+    color: rgb(0,0,0,0.5);
+}
+.menu-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin-left: 220px;
+}
+.menu-links ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+ 
+}
+.menu-links ul a{
+    text-decoration: none;
+    padding: 5px;
+  
+}
+.menu-links ul a:hover{
+      background-color: lightskyblue;
+      border-radius: 5px;
+}
+.user-log{
+    padding-right: 1rem;
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.user{
+    color: rgb(28, 135, 197);
+    padding: 5px;
+    background-color: rgb(121, 182, 213);
+    border-radius: 5px;
+}
+button{
+    border-radius: 5px;
+    border: none;
+}
+
+/* left-panel */
+
+.container{
+    width: 80%;
+    height: 70vh;
+    /* border: 2px solid gray; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 100px 100px;
+}
+.left{
+    width: 50%;
+    background-color: white;
+    margin-top: 0;
+     background-color:white;
+     border-radius: 5px;
+
+}
+.icon{
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.Add-Items{
+    width: 70%;
+    height: 30vh;
+    border: 2px solid whitesmoke;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 5px;
+    overflow: auto;
+}
+table{
+    border-spacing: 0px;
+    text-align: center;
+    background-color: rgb(173, 204, 247);
+    width: 100%;
+    margin-top: 10px;
+}
+table .sn{
+    width: 70%;
+    text-align: lefts;
+    padding-right: 3px;
+}
+#empty-cart {
+    margin-top: 10px;
+}
+#empty-cart h3{
+      font-size:  18px;
+      font-weight: 500;
+}
+#empty-cart p{
+    font-size: 10px;
+    color: rgb(207, 196, 196);
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid whitesmoke;
+    /* position: fixed; */
+}
+.Book{
+    width: 70%;
+    height: 30vh;
+    border: 2px solid whitesmoke;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: left;
+    padding: 5px;
+    background-color:white;
+    border-radius: 5px;
+    /* display: block; */
+}
+.Book h3{
+    font: 300;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.Book .row1 label{
+    display: block;
+    font-size: 10px;
+}
+.Book .row1 input{
+width: 100%;
+padding: 5px;
+border-radius: 5px;
+border: none;
+border:1px solid lightgray;
+margin-bottom: 10px;
+margin-top: 5px;
+ 
+}
+.Book .ep{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.Book .ep label{
+font-size: 10px;
+display: block;
+}
+ .ep input{
+    /* font-size: 10px; */
+    width: 50%;
+    display: flex;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid lightgray;
+}
+.Book button{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: rgb(133, 133, 212);
+    /* transform: scale(1.1); */
+    cursor: pointer;
+}
+.right{
+    width: 40%;
+    background-color: white;
+    margin-top: 0;
+    background-color:white;
+    border-radius: 5px;
+}
+.right h3{
+    font-size: 20px;
+    color: rgb(0, 0,0,1);
+}
+.right p{
+    color: rgb(202, 189, 189);
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+hr{
+     border-width: 100%;
+    margin-bottom: 10px;
+}
+ .right #service-image{
+    width: 100%;
+    height: 280px !important;
+    object-fit: cover;
+}
+.right .rate{
+    display: flex;
+    justify-content: space-between;
+}
+.right .rate h3{
+    color: rgb(0, 0,0,0.5);
+}
+.right .rate span{
+    color: rgb(131, 149, 196);
+}
+.right .btn{
+    display: flex;
+    width: 100%;
+    height: 0%;
+    gap: 10px;
+    /* margin-top: 5px; */
+   margin-bottom: 5px;
+   padding: 10px 20px;
+   
+
+}
+.right .para{
+    color: rgb(98, 98, 235);
+}
+.btn1
+{
+    color: red;
+    background-color: rgb(237, 172, 172)
+}
+.btn1:hover{
+   transform: scale(1.1);
+}
+.btn2:hover{
+   transform: scale(1.1);
+}
+.btn2{
+    color: green;
+    background-color: rgb(195, 234, 195);
+}
