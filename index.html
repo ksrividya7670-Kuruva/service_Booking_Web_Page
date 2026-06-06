@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Service Booking Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">Logo</h1>
+        <div class="menu-links">
+            <ul><li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="user-log"> 
+         <p class="user">Username</p>
+         <button>➡️</button>
+         </div>
+    </nav>
+    <!-- Main-section -->
+     <div class="container">
+        <div class="lef"> 
+        <div class="Add-Items">
+              <h3>Added Items</h3>
+             
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th class="sn">Service Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+               <tbody></tbody>
+            </table>
+            <div id="empty-cart">
+                <span class="icon">ⓘ</span>
+                <h3>No Items Added</h3>
+                <p>Add items to the cart from the services bar</p>
+            </div>
+            <div class="total"><h4>Total Amount</h4> <span id="total">₹0</span></div>
+             </div>
+         
+        <div class="Book">
+            <h3>Book Now</h3>
+            <div class="row1"> <label for="">Full Name</label><input type="text" placeholder="John Doe"></div>
+           <div class="ep">  <label for="">Email Id</label><input type="email" placeholder="emailid@gamil.com">
+            <label for="">Phone no</label><input type="tel" placeholder="0000000000"></div>
+            <Button onclick="BookNow()" id="btn">Book now</Button>
+        
+        </div>
+         </div>
+        <div class="right">
+            <h3>Browse Our Services</h3>
+            <p>Click on the add to cart button to add the services to your cart or press kry</p><hr>
+            <img src="data:image/jpeg;base64,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" alt="" id="service-image">
+            <div class="rate"><h3 id="service-name">Sofa set</h3> <span id="service-price">₹5000</span></div>
+            <div class="btn"><button class="btn btn1" onclick="skipItem()">Skip Item ⊝</button>
+            <button class="btn btn2" onclick="addItem()">Add Item ⨁</button></div>
+            <hr>
+            <p class="para">ⓘ Add the items to the cart and book now</p>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
